@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Card Shuffling Visual Proceser
+    </title>
+    <style>
+        body {
+  height: 100vh;
+  background: wheat;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 45px;
+  width: 155px;
+
+}
+
+.button1 {
+  background-color: white;
+  color: darkslategray;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.button1:hover {
+  background-color: lightgrey;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: darkslategray;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.button2:hover {
+  background-color: lightgray;
+  color: white;
+}
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 3px solid red;
+}
+
+.button3:hover {
+  background-color: pink;
+  color: white;
+}
+.button4 {
+  background-color: white;
+  color: black;
+  border: 3px solid red;
+}
+
+.button4:hover {
+  background-color: pink;
+  color: white;
+}
+.button5 {
+  background-color: white;
+  color: black;
+  border: 3px solid forestgreen;
+}
+
+.button5:hover {
+  background-color: white;
+  color: lightgreen;
+}
+.button6 {
+  background-color: white;
+  color: black;
+  border: 3px solid forestgreen;
+}
+    </style>
+</head>
+
+
+
+
+<body>
+    <table>
+        <tr>
+            <th>Spade &#9828</th>
+            <th>Club &#9831</th>
+            <th>Dimond &#9826</th>
+            <th>Heart &#9825</th>
+        </tr>
+        <tr><!--ACE-->
+            <td><button onclick=doSomething(1011); class="button button1">Ace &#9828</button></td>
+            <td><button onclick=doSomething(1012); class="button button2">Ace &#9831</button></td>
+            <td><button onclick=doSomething(2011); class="button button3">Ace &#9826</button></td>
+            <td><button onclick=doSomething(2012); class="button button4">Ace &#9825</button></td>
+        </tr>
+        <tr><!--2-->
+            <td><button onclick=doSomething(1021); class="button button1">2 &#9828</button></td>
+            <td><button onclick=doSomething(1022); class="button button2">2 &#9831</button></td>
+            <td><button onclick=doSomething(2021); class="button button3">2 &#9826</button></td>
+            <td><button onclick=doSomething(2022); class="button button4">2 &#9825</button></td>
+        </tr>
+        <tr><!--3-->
+            <td><button onclick=doSomething(1031); class="button button1">3 &#9828</button></td>
+            <td><button onclick=doSomething(1032); class="button button2">3 &#9831</button></td>
+            <td><button onclick=doSomething(2031); class="button button3">3 &#9826</button></td>
+            <td><button onclick=doSomething(2032); class="button button4">3 &#9825</button></td>
+        </tr>
+        <tr><!--4-->
+            <td><button onclick=doSomething(1041); class="button button1">4 &#9828</button></td>
+            <td><button onclick=doSomething(1042); class="button button2">4 &#9831</button></td>
+            <td><button onclick=doSomething(2041); class="button button3">4 &#9826</button></td>
+            <td><button onclick=doSomething(2042); class="button button4">4 &#9825</button></td>
+        </tr>
+        <tr><!--5-->
+            <td><button onclick=doSomething(1051); class="button button1">5 &#9828</button></td>
+            <td><button onclick=doSomething(1052); class="button button2">5 &#9831</button></td>
+            <td><button onclick=doSomething(2051); class="button button3">5 &#9826</button></td>
+            <td><button onclick=doSomething(2052); class="button button4">5 &#9825</button></td>
+        </tr>
+        <tr><!--6-->
+            <td><button onclick=doSomething(1061); class="button button1">6 &#9828</button></td>
+            <td><button onclick=doSomething(1062); class="button button2">6 &#9831</button></td>
+            <td><button onclick=doSomething(2061); class="button button3">6 &#9826</button></td>
+            <td><button onclick=doSomething(2062); class="button button4">6 &#9825</button></td>
+        </tr>
+        <tr><!--7-->
+            <td><button onclick=doSomething(1071); class="button button1">7 &#9828</button></td>
+            <td><button onclick=doSomething(1072); class="button button2">7 &#9831</button></td>
+            <td><button onclick=doSomething(2071); class="button button3">7 &#9826</button></td>
+            <td><button onclick=doSomething(2072); class="button button4">7 &#9825</button></td>
+        </tr>
+        <tr><!--8-->
+            <td><button onclick=doSomething(1081); class="button button1">8 &#9828</button></td>
+            <td><button onclick=doSomething(1082); class="button button2">8 &#9831</button></td>
+            <td><button onclick=doSomething(2081); class="button button3">8 &#9826</button></td>
+            <td><button onclick=doSomething(2082); class="button button4">8 &#9825</button></td>
+        </tr>
+        <tr><!--9-->
+            <td><button onclick=doSomething(1091); class="button button1">9 &#9828</button></td>
+            <td><button onclick=doSomething(1092); class="button button2">9 &#9831</button></td>
+            <td><button onclick=doSomething(2091); class="button button3">9 &#9826</button></td>
+            <td><button onclick=doSomething(2092); class="button button4">9 &#9825</button></td>
+        </tr>
+        <tr><!--10-->
+            <td><button onclick=doSomething(1101); class="button button1">10 &#9828</button></td>
+            <td><button onclick=doSomething(1102); class="button button2">10 &#9831</button></td>
+            <td><button onclick=doSomething(2101); class="button button3">10 &#9826</button></td>
+            <td><button onclick=doSomething(2102); class="button button4">10 &#9825</button></td>
+        </tr>
+        <tr><!--JACK-->
+            <td><button onclick=doSomething(1111); class="button button1">Jack &#9828</button></td>
+            <td><button onclick=doSomething(1112); class="button button2">Jack &#9831</button></td>
+            <td><button onclick=doSomething(2111); class="button button3">Jack &#9826</button></td>
+            <td><button onclick=doSomething(2112); class="button button4">Jack &#9825</button></td>
+        </tr>
+        <tr><!--QUEEN-->
+            <td><button onclick=doSomething(1121); class="button button1">Queen &#9828</button></td>
+            <td><button onclick=doSomething(1122); class="button button2">Queen &#9831</button></td>
+            <td><button onclick=doSomething(2121); class="button button3">Queen &#9826</button></td>
+            <td><button onclick=doSomething(2122); class="button button4">Queen &#9825</button></td>
+        </tr>
+        <tr> <!--KING-->
+            <td><button onclick=doSomething(1131); class="button button1">King &#9828</button></td>
+            <td><button onclick=doSomething(1132); class="button button2">King &#9831</button></td>
+            <td><button onclick=doSomething(2131); class="button button3">King &#9826</button></td>
+            <td><button onclick=doSomething(2132); class="button button4">King &#9825</button></td>
+        </tr>
+        <tr><!--list-->
+           <td><button onclick=doSomethingelse(); class="button button5">Calculate</button></td>
+           <td><p id="moves">Moves = </p></td> 
+           <td><p id="luckys">Luckys = </p></td>  
+           <td><p id="recorded">Recorded = </p></td> 
+        </tr>
+    </table>
+    <br>
+    <!--<td><p id="list">list</p></td> -->
+        
+   
+      
+
+
+    <script>
+        //THE BIG LIST and sequence of all the cards in order of being flipped
+        var cards =[];
+        //records all the seen cards to compare to see if a move is lucky
+        var seencards =[];
+        //counts the overall amount of moves
+        var moves =0;
+        //identifys what part of the pair we are looking at
+        var paircount =1;
+        var matchpair ="false";
+        //counts the number of lucky moves tottal
+        var luckymoves =0;
+        //if the pairs have cards that match previus cards
+        var matched =false;
+        //evaluates the first card of a pair
+        var firstcard ="";
+        var firstcolor ="";
+        var firsttype ="";
+        //evaluates the first card of a pair
+        var secondcard ="";
+        var secondcolor ="";
+        var secondtype ="";
+        //For evaluating the recorded amount of moves
+        var record = 0;
+
+        function doSomething(num){
+            cards.push(num);
+            record = record + 1
+            document.getElementById("recorded").innerHTML = "Recorded = " + record;
+           //document.getElementById("list").innerHTML = cards;
+     
+            }
+        //Algorithim that will determine amount of lucky moves and tottal moves
+        function doSomethingelse(){
+            //counts each recorded move
+            for (var i = 0; i < cards.length; i++){
+                if (paircount === 1){
+                    paircount = 2;
+                    firstcard = cards[i].toString();
+                    firstcolor = firstcard.substr(0, 1);
+                    firsttype = firstcard.substr(1, 2);
+                } else {
+                    secondcard = cards[i].toString();
+                    secondcolor = secondcard.substr(0, 1);
+                    secondtype = secondcard.substr(1, 2);
+                    if (firstcolor === secondcolor){
+                        if (firsttype === secondtype){
+                            for (var b = 0; b < seencards.length; b++){
+                                if (firstcard === seencards[b]){
+                                    matched = true;
+                                }
+                                if (secondcard === seencards[b]){
+                                        matched = true;
+                                }
+                            }
+                            if (matched === false){
+                                luckymoves = luckymoves +1;
+                            }
+                        }
+                    }
+                    //adds the cards to the list of seen cards
+                    seencards.push (firstcard);
+                    seencards.push (secondcard);
+                    //returns matched and paircount back for the next loop
+                    matched = false;
+                    paircount =1;
+ 
+                }
+            }
+            //makes the moves list
+            moves = cards.length/2;
+            //Tells The screen what to display
+            document.getElementById("moves").innerHTML = "Moves = " + moves;
+            document.getElementById("luckys").innerHTML = "Luckys = " + luckymoves;
+           
+        }
+    </script>
+
+ 
+</body>
+
+
+
+
+
+
+
+</html>
